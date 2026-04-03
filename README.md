@@ -8,7 +8,7 @@ Delivers transactional emails — authentication, notifications, form submission
 
 - An [EmDash](https://github.com/emdash-cms/emdash) site
 - A [JetEmail](https://jetemail.com) account with a verified domain
-- A transactional API key (get one from the [JetEmail dashboard](https://app.jetemail.com) under **Outbound > Keys**)
+- A transactional API key (get one from the [JetEmail dashboard](https://dash.jetemail.com) under **Outbound > Keys**)
 
 ## Installation
 
