@@ -24,22 +24,19 @@ npm install @jetemail/emdash
 // astro.config.mjs
 import { jetEmailPlugin } from "@jetemail/emdash/config";
 
-export default defineConfig({
-  integrations: [
-    emdash({
-      plugins: [jetEmailPlugin()],
-      // ...other config
-    }),
-  ],
-});
+// Add jetEmailPlugin() to your emdash plugins array:
+emdash({
+  database: d1({ binding: "DB", session: "auto" }),
+  storage: r2({ binding: "MEDIA" }),
+  plugins: [formsPlugin(), jetEmailPlugin()],
+  // ...
+}),
 ```
 
-You can optionally pass your API key at config time:
+You can optionally pass your API key at config time instead of setting it in the admin panel:
 
 ```js
-jetEmailPlugin({
-  apiKey: process.env.JETEMAIL_API_KEY,
-})
+plugins: [jetEmailPlugin({ apiKey: process.env.JETEMAIL_API_KEY })],
 ```
 
 ### 2. Configure via the admin panel
