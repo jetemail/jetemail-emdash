@@ -13,10 +13,10 @@ export function jetEmailPlugin(
   return {
     id: "jetemail",
     version: "0.1.0",
-    entrypoint: "@jetemail/emdash-plugin",
+    entrypoint: "@jetemail/emdash",
     options,
     format: "native",
-    adminEntry: "@jetemail/emdash-plugin/admin",
+    adminEntry: "@jetemail/emdash/admin",
     adminPages: [
       { path: "/", label: "JetEmail", icon: "mail" },
     ],
@@ -33,7 +33,7 @@ export function createPlugin() {
     allowedHosts: ["api.jetemail.com"],
 
     admin: {
-      entry: "@jetemail/emdash-plugin/admin",
+      entry: "@jetemail/emdash/admin",
       pages: [
         { path: "/", label: "JetEmail", icon: "mail" },
       ],

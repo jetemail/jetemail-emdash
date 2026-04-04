@@ -1,5 +1,5 @@
 {
-  "name": "@jetemail/emdash-plugin",
+  "name": "@jetemail/emdash",
   "version": "0.1.0",
   "description": "JetEmail email provider plugin for EmDash CMS",
   "type": "module",

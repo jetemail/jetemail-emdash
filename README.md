@@ -1,4 +1,4 @@
-# @jetemail/emdash-plugin
+# @jetemail/emdash
 
 JetEmail email provider plugin for [EmDash CMS](https://github.com/emdash-cms/emdash).
 
@@ -13,7 +13,7 @@ Delivers transactional emails — authentication, notifications, form submission
 ## Installation
 
 ```bash
-npm install @jetemail/emdash-plugin
+npm install @jetemail/emdash
 ```
 
 ## Setup
@@ -22,7 +22,7 @@ npm install @jetemail/emdash-plugin
 
 ```js
 // astro.config.mjs
-import { jetEmailPlugin } from "@jetemail/emdash-plugin/config";
+import { jetEmailPlugin } from "@jetemail/emdash/config";
 
 export default defineConfig({
   integrations: [
